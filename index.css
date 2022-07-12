@@ -16,9 +16,21 @@ h1 {
     margin-left: 10px;
 }
 
+@media (max-width: 800px) {
+    h1 {
+        display: none;
+    }
+}
+
 nav {
     display:flex;
     justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    nav {
+       justify-content: center; 
+    }
 }
 
 ul {
@@ -34,17 +46,38 @@ ul {
 
 section#About {
     background-color: rgb(194, 188, 188);
-    height: 800px;
+    height: 500px;
     display: flex;
     margin-bottom: 10px;
 }
 
+@media (max-width: 800px) {
+    section#About {
+        flex-direction: column;
+        justify-content: center;
+        
+      }
+}
+
+p {
+    line-height: 2em;
+    width: 70%;
+}
+
 section#Projects {
     background-color: rgb(22, 3, 38);
-    height: 800px;
+    height: 500px;
     display: flex;
     color: white;
 
+}
+
+@media (max-width: 800px) {
+    section#Projects {
+        flex-direction: column;
+        justify-content: center;
+
+      }
 }
 
 #projects {
@@ -71,6 +104,12 @@ section#Projects {
     justify-content: center;
 }
 
+@media (max-width: 800px) {
+    #left {
+        width: 100%;
+    }
+}
+
 #right {
     width: 50%;
     align-items: right;
@@ -80,9 +119,21 @@ section#Projects {
     justify-content: center;
 }
 
+@media (max-width: 800px) {
+    #right {
+        width: 100%;
+    }
+}
+
 footer {
     height: 200px;
     display:flex;
+}
+
+@media (max-width: 800px) {
+    footer {
+        flex-direction: column;
+    }
 }
 
 .box {
@@ -92,4 +143,33 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: rgb(205, 203, 235);
+}
+
+@media (max-width: 800px) {
+    .box {
+        width: 100%;
+        margin-bottom: 1px;
+    }
+}
+
+#email {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h4 {
+    align-items: center;
+    font-weight: normal;
+}
+
+#contactimg {
+    height: auto;
+    max-width: 100%
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
