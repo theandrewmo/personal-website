@@ -1,0 +1,95 @@
+body {
+    margin: 0px;
+    margin-top: 70px;
+}
+
+header {
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    margin: 0;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+ul {
+    display:flex;
+    list-style: none;
+    margin-right: 32px;
+}
+
+.navitem {
+    margin: 10px;
+    color:rgb(7, 5, 8)
+}
+
+section#About {
+    background-color: rgb(194, 188, 188);
+    height: 800px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+section#Projects {
+    background-color: rgb(22, 3, 38);
+    height: 800px;
+    display: flex;
+    color: white;
+
+}
+
+#projects {
+    gap: 20px;
+}
+
+#About #right {
+    background-image: url(https://images.unsplash.com/photo-1657524432718-042ae15e4b8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wY);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Projects #left {
+    background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80);
+}
+
+#left {
+    width:50%;
+    align-items: left;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#right {
+    width: 50%;
+    align-items: right;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 200px;
+    display:flex;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 33.333%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(205, 203, 235);
+}
